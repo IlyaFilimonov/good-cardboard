@@ -1,0 +1,41 @@
+.header
+	&-logo
+		background: url(../img/header/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	padding: 15px 0
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			a 
+				color: $text-color-dark
+				cursor: pointer
+				text-decoration: none
+				&:hover
+					color: lighten($text-color-dark, 10)
+			&s 
+				display: flex
+			font-size: 22px
+			font-weight: 500
+			margin-right: 23px
+			color: $text-color-dark
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 15px
+
+@keyframes move
+	from 
+		opacity: 0	
+		margin-bottom: -100px
+	to
+		margin-bottom: 0px
+		opacity: 1
+
+
+.animate
+	animation-name: move
+	animation-duration: 1s
+		
